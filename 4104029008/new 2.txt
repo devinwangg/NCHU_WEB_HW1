@@ -1,0 +1,10 @@
+<html>
+<head>
+<title>個人簡介</title>
+</head>
+<body>
+
+<h2>生日:86/05/31</h2>
+<p>星座:雙子座</p>
+</body>
+</html>
