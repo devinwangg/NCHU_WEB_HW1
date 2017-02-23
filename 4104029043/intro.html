@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
   <title>自傳</title>
   <style>
     body
@@ -11,16 +15,33 @@
       background: linear-gradient(to left, #348F50 , #56B4D3) !important;
     }
   </style>
-
 </head>
+
 <body>
-  <img src="https://goo.gl/6b3JJN" height=300px width=300px>
-  <ul>
-    <li>姓名 ： 許達夫</li>
-    <li>性別 ： 男</li>
-    <li>就讀系所 ： 資訊管理學系</li>
-    <li><a href="https://cabao.github.io">Github Pages</a></li>
-    <li><a href="mailto:cabao@cabao.com.tw">Mail to</a></li>
-  </ul>
+  <div class="row">
+    <div class="col l4"></div>
+    <div class="col s12 m7 l4">
+      <div class="card">
+        <div class="card-image">
+          <img src="https://goo.gl/6b3JJN">
+          <span class="card-title" style="color:black">About me</span>
+        </div>
+        <div class="card-content">
+          <ul>
+            <li><span style="font-size:18px;">姓名 ： 許達夫</span></li>
+            <li><span style="font-size:18px;">就讀系所 ： 資訊管理學系</span></li>
+            <li><span style="font-size:18px;">職業 ： 碼農</span></li>
+            <li><span style="font-size:18px;">專長 ： 養蟲</span></li>
+          </ul>
+        </div>
+        <div class="card-action">
+          <a href="https://github.com/cabao">Github Profile</a>
+          <a href="https://cabao.github.io">Github Pages</a>
+          <a href="mailto:cabao@cabao.com.tw">Mail to</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
