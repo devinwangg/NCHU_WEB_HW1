@@ -1,16 +1,17 @@
 body {
-    background-color: lightblue;
-}
-h1 {
-    color: red;
+	background-image: url(../img/123.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
 }
 p {
+	color :red;
     font-family: verdana;
     font-size: 20px;
 }
-h1.blue{
-	color: blue;
-}
-h3.green{
-	color: green;
+p.green{
+	color :green;
+    font-family: verdana;
+    font-size: 20px;
 }
