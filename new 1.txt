@@ -1,0 +1,9 @@
+﻿<html>
+<head>
+<title>jsp</title>
+</head>
+<body>連到root/h/test2
+<a href="..\ROOT\h\test2.html">hello</a>
+<img src="http://wp1.szjh.ntpc.edu.tw/rex/wp-content/uploads/sites/3/2015/02/Koala-300x225.jpg" width="100px" height="100px" alt="error no find " >中間的自</img>
+</body>
+</html>
