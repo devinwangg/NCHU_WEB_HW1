@@ -1,8 +1,28 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>7105029031</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#loader").show()
+        $.ajax({
+          url: "http://140.120.54.114:8000/data/search",
+          type: "GET",
+          success: callback,
+          error: callback
+        });
+        function callback(data){
+          console.log(data)
+        }
+    });
+});
+
+</script>
 </head>
 <body>
-Test
+
+<button>Send an HTTP GET request to a page and get the result back</button>
+
 </body>
 </html>
