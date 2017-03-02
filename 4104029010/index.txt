@@ -1,0 +1,13 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>jjjjjjjj</title>
+</head>
+<body>
+<a href="son/1.htm">damn</a>
+<h1>自傳</h1>
+<h2>身高187 體重87.87公噸</h2>
+<img src = "0.jpeg">
+<img src = "https://img.4gamers.com.tw/ckfinder/images/Panda/4Gmagazine2/1608-coverstory.png">
+</body>
+</html>
