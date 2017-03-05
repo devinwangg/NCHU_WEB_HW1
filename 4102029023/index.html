@@ -1,0 +1,107 @@
+<style>
+:root {
+	background: -webkit-linear-gradient(top,#3c465c,#5C4F3C);
+	--primary: #D3E0FF;
+	--solid: #fff;
+	--btn-w: 10em;
+	--dot-w: calc(var(--btn-w)*.2);
+	--tr-X: calc(var(--btn-w) - var(--btn-w)*.2);
+}
+* {box-sizing: border-box;}
+*:before, *:after {box-sizing: border-box;}
+
+body {
+	height: 63vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: wrap;
+	background: var(--bg);
+	font-size: 20px;
+	font-family: 'Titillium Web', sans-serif;
+}
+h1 {
+	color: var(--solid);
+	font-size: 2.5rem;
+	margin-top: 6rem;
+	display:block;
+}
+
+.rbtn {
+	position: relative;
+	margin: 0 20px 0 20px;
+	width: 200px;
+	color: #78FFCD;
+	border: .15em solid #9effdb;
+	border-radius: 5em;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 18px;
+	line-height: 50px;
+	cursor: pointer;
+	font-family:微軟正黑體;
+	display:inline-block;
+	height:50px;
+}
+.rdot {
+	content: '';
+	position: absolute;
+	top: 0;
+	width: 20%;
+	height: 100%;
+	border-radius: 100%;
+	transition: all 300ms ease;
+	display: none;
+}
+.rdot:after {
+	content: '';
+	position: absolute;
+	left: calc(50% - .4em);
+	top: -.4em;
+	height: .8em;
+	width: .8em;
+	background: #9effdb;
+	border-radius: 1em;
+	border: .25em solid #fff;
+	box-shadow: 0 0 .7em #fff,
+				0 0 2em #9effdb;
+}
+.rbtn:hover .rdot,
+.rbtn:focus .rdot {
+	animation: atom 1.5s infinite linear;
+	display: block;
+}
+@keyframes atom {
+	0% {transform: translateX(0) rotate(0);}
+	25%{transform: translateX(400%) rotate(0);}
+	50% {transform: translateX(400%) rotate(180deg);}
+	75% {transform: translateX(0) rotate(180deg);}
+	100% {transform: translateX(0) rotate(360deg);}
+}
+
+</style>
+
+<div style="width: 100%; height: auto; text-align: center; ">
+<h1 >All&nbsp;About&nbsp;Me</h1>
+
+<img style="border-radius:50%;" src="pic.jpg" width="100px;"/>
+</div>
+<div class="container" >	
+	<div class="rbtn">
+	<a href="info.html" style="color:#78FFCD;text-decoration:none;">
+		<span>Basic&nbsp;Info</span>
+		<div class="rdot"></div>
+		</a>
+	</div>
+	<div class="rbtn">
+	  <a href="cat.html" style="color:#78FFCD;text-decoration:none;">
+		<span>ヾ(*ΦAΦ)ツ</span>
+		<div class="rdot"></div>
+		</a>
+	</div>
+	<div class="rbtn">
+		<span>---</span>
+		<div class="rdot"></div>
+	</div>
+</div>
+
