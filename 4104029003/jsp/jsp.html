@@ -1,12 +1,73 @@
+<!DOCTYPE html>
 <html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>還是關於我</title>
-</head>
-<body>
-	<h1>身高:168</h1>
-	<h1>體重:58</h1>
-	<h1>興趣:逛街，睡覺</h1>
-	<a href = "..\index.html">關於我</a>
-</body>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>還是關於我</title>
+		<style>
+			span {
+				font-size: 150%;
+				font-style: italic;
+				font-weight: bolder;
+				font-family: monospace;
+				color: DimGray;
+			}
+			#container {
+				font-size: 150%;
+				
+				margin-top: auto;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: auto;
+				
+				border-style: outset;
+				border-width: 9px;
+				border-color: PowderBlue;
+					
+				padding-top: auto;
+				padding-left: auto;
+				padding-right: auto;
+				padding-bottom: auto;
+			}
+		</style>
+	</head>
+
+	<body background="wood.jpg">
+		<span>
+			<h1>身高:168</h1>
+			<h1>體重:58</h1>
+			<h1>興趣:逛街，睡覺</h1>
+		</span>
+		<table id="container" style="border:10px #FFD382 dashed"; border>
+			<tr>
+				<th>Elementary School</th>
+				<th>Junior High School</th>
+				<th>Senior High School</th>
+				<th>College</th>
+			</tr>
+			<tr>
+				<td><table>Taipei</table></td>
+				<td>Taipei</td>
+				<td>Taipei</td>
+				<td>Taichung</td>
+			</tr>
+			<tr>
+				<td>老松國民小學</td>
+				<td>弘道國民中學</td>
+				<td>華江高級中學</td>
+				<td>中興大學資訊管理學系</td>
+			</tr>
+		</table>
+		<br><br>
+		<form>
+			帳號：<br>
+			<input type="text" name="account" placeholder="請輸入帳號"/>
+			<br>
+			密碼：<br>
+			<input type="password" name="pwd" placeholder="請輸入密碼"/>
+			<br><br>
+			<input type="submit" value="登入"/>
+		</form>
+		
+		<a href = "..\index.html"><br><br>回到關於我</a>
+	</body>
 </html>
