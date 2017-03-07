@@ -1,0 +1,44 @@
+html, body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Raleway', arial, sans-serif;
+    font-weight: 100;
+    height: 100vh;
+    margin: 0;
+}
+
+.background {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background: url(https://images.unsplash.com/photo-1434396505260-9ec0d6491795?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=5728794eac4048bf3a4a6007a0e128f1);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content {
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+    opacity: 0.5;
+}
+
+#title{
+    font-size: 84px;
+    margin-bottom: 30px;
+}
+
+a{
+    color: #636b6f;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#links > a {
+    padding: 0 25px;
+    font-size: 16px;
+}
