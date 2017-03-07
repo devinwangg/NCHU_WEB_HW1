@@ -1,14 +1,40 @@
-﻿<html>
-  <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>自我介紹</title>
-<style>body {background-color: brown;}</style>
-  </head>
- <center><body bgcolor="brown" text="white" face="Arial" size="7">About me</center>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        body {
+            background-color: rgb(177, 224, 242);
+        }
+    </style>
+</head>
+<center>
+
+    <body text="blue" face="Arial">
+        <h1>About me</h1></center>
 
 <hr size="5" align="center" noshade width="90%" color="black">
-  <center> <p><img src="nigga.jpg"></p></center>
-<center> <br><a href="jsp\jsp.htm">姓名</a></br> </center>
- <center><br><a href="css\css.htm">生日</a></br> </center>
-  </body>
+<center>
+    <p><img src="nigga.jpg"></p>
+</center>
+<center> <br><a href="jsp\jsp.htm">學歷</a></br>
+</center>
+<center><br><a href="css\css.htm">基本資料</a></br>
+</center>
+<div id="container">
+    <form action="User_Verification.jsp" method="post">
+        帳號：<br>
+        <input type="text" name="account" placeholder="請輸入帳號" />
+        <br> 密碼：
+        <br>
+        <input type="password" name="pwd" placeholder="請輸入密碼" />
+        <br><br>
+        <input type="submit" value="登入" />
+    </form>
+</div>
+</body>
+
 </html>
