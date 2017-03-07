@@ -21,7 +21,11 @@ Released   : 20130902
 <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
 
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
-
+<style>
+table, th, td {
+   border: 1px solid black;
+}
+</style>
 </head>
 <body>
 <div id="page" class="container">
@@ -45,6 +49,17 @@ Released   : 20130902
 			<div class="title">
 				<h2> Hello, I'm Jake.</h2>
 				<span class="byline">I'm a magic dog.</span>
+				<form method="post">
+					First name:<br>
+					<input type="text" name="firstname" ><br>
+					Last name:<br>
+					<input type="text" name="lastname" ><br><br>
+					<input type="submit" value="Submit">
+				</form>
+				<table>
+					<tr><th>1</th><th>2</th></tr>
+					<tr><td>a</td><td>b</td></tr>
+				</table>
 			</div>
 			
 		</div>
