@@ -10,5 +10,38 @@ body
   padding-left: 40%;
   border-radius: 25px;
   border-style: outset;
+}
 
+td, th
+{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(1)
+{
+  background-color: #aaaaaa;
+}
+
+tr:nth-child(2)
+{
+  background-color: #dddddd;
+}
+
+tr:nth-child(3)
+{
+  background-color: #dddddd;
+}
+
+#player
+{
+  width:500px;
+  height:400px;
+  margin-left: 33%;
+}
+
+#quiz, form
+{
+  margin-left: 25%;
 }
