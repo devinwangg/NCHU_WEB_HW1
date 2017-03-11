@@ -1,0 +1,55 @@
+html, body {
+    font-family: arial, sans-serif;
+}
+
+.blog-header {
+    height: 300px;
+    width: 100%;
+    background: url(http://i.imgur.com/D3I1fK9.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 65%;
+}
+
+.blog-title {
+  font-family: 'Raleway', arial, sans-serif;
+  text-align: right;
+  width: 100%;
+
+}
+
+/*containers*/
+
+#container {
+    width: 1000px;
+    margin: 0px auto;
+    position: relative;
+}
+
+#container h1 {
+    font-size:40px;
+    letter-spacing: .1rem;
+    /* width:600px; */
+    /*padding:32px 0 25px 0; */
+    margin: 20px 0;
+}
+
+#container h1 a {
+    color: #222;
+    text-decoration: none;
+}
+
+#container h1 a:hover {
+    color: #c00;
+}
+
+/*content*/
+
+#content {
+  /*float: right;*/
+  /*width: 1000px;*/
+}
+
+.panel-body {
+  margin-bottom: 150px;
+}

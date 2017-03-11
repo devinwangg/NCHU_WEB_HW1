@@ -1,0 +1,22 @@
+#f1 {
+    font-size: 200%;
+    font-style: italic;
+    font-weight: bold;
+    font-family: fantasy;
+    color: white;
+    background-color: black;
+}
+#rightfloat {
+  float:right;
+}
+#container {
+    margin-top:30px;
+    margin-left:10%;
+    margin-right:auto;
+    margin-bottom:20px;
+    border: medium dashed black;
+    padding-top:15px;
+    padding-left:10px;
+    padding-right:30px;
+    padding-bottom:40px;
+}
