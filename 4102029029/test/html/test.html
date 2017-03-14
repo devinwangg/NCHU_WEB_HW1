@@ -10,6 +10,51 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="../assets/css/page.css" />
+		<script>
+			function fuck(thisbutton){
+				alert("030");
+				document.getElementById("tt").innerHTML = "<p>My name is<b> "+ thisbutton.name+"</b></p>";
+			}
+			function append(){
+				var node = document.createElement("LI");
+				var textnode = document.createTextNode("Fuck ya!");
+				node.appendChild(textnode);
+				document.getElementById("tt").appendChild(node);
+			}
+			function getText(){
+				var a = document.getElementById("tt");
+				alert(a.textContent);
+			}
+			function submit(){
+				var a = document.forms["aaa"];
+				var h="";
+				
+				for (var i=0;i<a.hobby.length;i++){
+					if(a.hobby[i].checked){
+						h+=a.hobby[i].value+"\n";
+					}
+				}
+				var g="";
+				for(var i=0; i<a.sexual.length;i++){
+					if(a.sexual[i].checked){
+						g = a.sexual[i].value;
+					}
+				}
+				if(a.elements.Name.value==""){
+					alert("check your name,dickhead");
+				}
+				else{
+					document.getElementById("tone").innerHTML= a.Name.value ;
+					document.getElementById("ttwo").innerHTML= a.birthday.value ;
+					document.getElementById("tthree").innerHTML=g ;
+					document.getElementById("tfour").innerHTML= h;
+					document.getElementById("tfive").innerHTML= a.auto.value;
+					
+				}
+				confirm("Confirm!");
+			}
+			
+		</script>
 		</head>
 	<body style="background-color: lightblue">
 			<section id="one" class="wrapper special">
@@ -27,22 +72,40 @@
 						</center>
 					</div>
 					<div id="idk">
-						<form action="#">
-							  First name:<br>
-							  <input type="text" name="firstname" value="FirstName">
-							  <br>
-							  Last name:<br>
-							  <input type="text" name="lastname" value="LastName">
-							  <br><br>
-							  <input type="submit" value="Submit">
+						<fieldset>
+						<legend>Test Question</legend>
+						</fieldset>
+						<form action="#" name="aaa">
+							  姓名：<input type="text" name="Name">
+							  生日：<input type="text" name="birthday">
+							  性別：<br>
+							  <input type="radio" name="sexual" value="male" checked>男
+							  <input type="radio" name="sexual" value="female">女<br>
+							  興趣：<br>
+							  <input type="checkbox" name="hobby" value="ball" checked>打球
+							  <input type="checkbox" name="hobby" value="music"/>聽音樂
+							  <input type="checkbox" name="hobby" value="sleep"/>睡覺
+							  <input type="checkbox" name="hobby" value="wrestle"/>打摔角<br>
+							  自傳：<br>
+							  <textarea rows="4" name="auto">Text your autobiography!</textarea>
 						</form> 
+						<center>
+						<button onclick="submit()">submit</button>
+						</center>
 						<table>
-							<tr><th>1</th><th>2</th></tr>
-							<tr><td>1.data</td><td>2.data</td></tr>
+							<tr><th>name</th><th>birthday</th><th>gender</th><th>hobby</th><th>intro</th></tr>
+							<tr><td id="tone">1.data</td><td id="ttwo">2.data</td><td id="tthree">3.data</td><td id="tfour">4.data</td><td id="tfive">5.data</td></tr>
 						</table>
 					</div>
 					<div  id="three" class="container">
+						<div id="tt">
+							<p>Empty!</p>
+						</div>
+						
 						<center>
+							<button name="John_Cena" type="030" onclick="fuck(this)">Test</button>
+							<button onclick="append()">Test2</button>
+							<button onclick="getText()">Test3</button>
 							<button onclick="window.location='..'">Homepage</button>
 						</center>
 					</div>
