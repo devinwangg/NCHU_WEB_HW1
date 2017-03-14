@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>表單</title>
+	<style>
+	#container { 
+    margin-top:5px; 
+    margin-left:5%; 
+    margin-right:auto; 
+    margin-bottom:10px; 
+	background-color:rgb(300, 200, 0); 
+	
+	border:#0000FF 5px solid; 
+	max-width: 300px;
+	border-style:ridge;
+	
+	padding-top:10px; 
+	padding-left:50px; 
+	padding-right:50px; 
+	padding-bottom:20px;
+	
+	font-size: 130%;
+	font-weight: bold;
+	font-family: fantasy;
+	
+	}
+	
+	</style>
+	
+	</head>
+	<body>
+	<h1></h1>
+	<div id="container">
+	<form action="User_Verification.jsp">
+	學號：<br>
+	<input type="text" name="account" placeholder="請輸入學號" /><br>
+	密碼：<br>
+	<input type="password" name="pwd" placeholder="請輸入密碼"/><br>
+	<input type="radio" name="grade" />大一<br>
+	<input type="radio" name="grade" />大二<br>
+	<input type="radio" name="grade" />大三<br>
+	<input type="radio" name="grade" />大四<br><br>
+	<input type="checkbox" />記住學號及密碼	
+	<br><br>
+	<input type="submit" value="登入" />
+	</form>
+	</div>
+	<p>
+	<br><br>
+	<a href="index.html">返回</a>
+	</p>
+	</body>
+
+</html>
