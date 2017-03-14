@@ -1,12 +1,144 @@
 ﻿<html>
 <head>
+<script>
+	alert("HI");
+	document.write("Click");
+	document.fgcolor = "gold";
+	document.bgcoloe = "black";
+	function bt_details(this_bt){
+		var name = this_bt.name;
+		var value = this_bt.value;
+		var type = this_bt.type;
+		document.write("MY NAME IS <b>" + name + "</b>");
+		document.write("<br>MY VALUE IS <b>" + value + "</b>");	
+		document.write("<br>MY TYPE IS <b>" + type + "</b>");
+	}
+	function showAElement(){
+	var a = document.getElementById("nchu");
+	alert(a.nodeName + "-" + a.href);
+	}
+</script>
+<form>
+	<input type = "button" name = "hello"
+	value = "Please Click me to see my name and value"
+	onclick = "bt_details(this)">
+	<p><a id = "nchu"href = "https://www.youtube.com/">NCHU</a></p>
+</form>
+
 <title>自傳</title>
+<style>
+#container{ 
+    margin-top:8px; 
+    margin-left:1px; 
+    margin-right:1px; 
+    margin-bottom:20px; 
+    border: 5px solid #613030; 
+}
+   display: inline-block;
+  box-sizing: border-box;
+  float: left;
+    height:100%;
+</style>
 </head>
 <body>
-	<h1>姓名:林宜融</h1>
- 	<h1>學號:4104029039</h1>
- 	<h1>系級:資管二</h1>
- 	<img src = "ppp.png">
- 	<a href = "next\me1.html">下一頁</a>
+<div id="container"> 
+	
+		<h1>姓名:林宜融</h1>
+		<h1>學號:4104029039</h1>
+		<h1>系級:資管二</h1>
+		<img src = "ppp.png">
+		<a href = "next\me1.html">下一頁</a>
+</div>
+<h2>課表</h2>
+<table style="border:8px #FFD382 groove;" cellpadding="10" border='1'>
+  <tr>
+    <th>  </th>
+    <th>一</th>
+    <th>二</th>
+	<th>三</th>
+	<th>四</th>
+	<th>五</th>
+  </tr>
+  <tr>
+    <td>1</td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>大學國文</td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>2</td>
+	<td>APP</td>
+	<td>XML</td>
+	<td>Database</td>
+	<td>大學國文</td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>3</td>
+	<td>APP</td>
+	<td>XML</td>
+	<td>Database</td>
+	<td>新聞英文</td>
+	<td>通識</td>
+  </tr>
+  <tr>
+    <td>4</td>
+	<td>APP</td>
+	<td>XML</td>
+	<td>Database</td>
+	<td>新聞英文</td>
+	<td>通識</td>
+  </tr>
+  <tr>
+    <td>5</td>
+	<td>影像處理</td>
+	<td></td>
+	<td>通識</td>
+	<td>物聯網</td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>6</td>
+	<td>影像處理</td>
+	<td>網路系統設計</td>
+	<td>通識</td>
+	<td>物聯網</td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>7</td>
+	<td>影像處理</td>
+	<td>網路系統設計</td>
+	<td>體育</td>
+	<td>物聯網</td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>8</td>
+	<td>影像處理</td>
+	<td>網路系統設計</td>
+	<td>體育</td>
+	<td></td>
+	<td></td>
+  </tr>
+</table>
+<h2>登入</h2>
+<form>
+    帳號：<br>
+    <input type="text" name="account" placeholder="請輸入帳號" />
+    <br>
+    密碼：<br>
+    <input type="password" name="pwd" placeholder="請輸入密碼"/>
+    <br><br>
+	<input type="radio" name="sex" />男生
+	<input type="radio" name="sex" />女生
+	<br><br>
+	<input type="submit" value="登入" />
+</form>
+
+
+
 </body>
 </html> 
