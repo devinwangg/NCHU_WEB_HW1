@@ -1,0 +1,14 @@
+body
+{
+  background: linear-gradient(to left, #348F50 , #56B4D3) !important;
+}
+#wel-box
+{
+  background: linear-gradient(to right, #FFC300 , #FF7300) !important;
+  padding-top:10px;
+  padding-bottom: 10px;
+  padding-left: 40%;
+  border-radius: 25px;
+  border-style: outset;
+
+}
