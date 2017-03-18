@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <form name="form1">
+    姓名：<input name="username" placeholder="請輸入名字"  size=10 maxlength=20 ><P>
+	生日：<input name="birthday" placeholder="1990/01/01"   size=10 maxlength=20><P>
+	性別：<input name="sex" type=radio value="男"checked>男
+	      <input name="sex" type=radio value="女">女<P>
+	興趣：(可複選)<br>
+	<input type=checkbox name="hobby"  value="book">閱讀
+	<input type=checkbox name="hobby"  value="sport">運動
+	<input type=checkbox name="hobby"  value="music">音樂<br>
+	自傳：<br>
+	<textarea rows=20 cols=50 name="note"></textarea><br>
+    <input type="button" value="送出" onclick="postData()" />
+  </form>
+  <p id="output"></p>
+  <script>
+      function postData(){
+        var output = document.getElementById("output");
+        var username = document.form1.username.value;
+		var birthday = document.form1.birthday.value;
+		var sex = document.form1.sex.value;
+
+       output.innerHTML = "姓名:"+ username+"<br>生日:"+birthday+"<br>性別:"+sex;
+		
+      }
+  </script>
+</body>
+</html>
