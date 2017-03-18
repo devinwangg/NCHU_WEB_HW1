@@ -1,0 +1,106 @@
+﻿<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+  *{
+  font-family: 微軟正黑體;
+  letter-spacing: 1px;
+  background-color: #000;
+  color: #FFFF00;
+}
+
+table {
+  font-size: 20px;
+  text-align: center;
+  height: 200px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+td {
+  background-color: #99FF99;
+  color: #880000;
+  font-weight: 700;
+  height: 20px;
+  width: 200px;
+}
+.ta{
+  /* display: none;*/
+/*   height: 0px; */
+}
+.send{
+  cursor: pointer;
+}
+
+  </style>
+   <script>
+      function postData(){
+        var output = document.getElementById("output");
+        var username = document.form1.myname.value;
+        var birthday = document.form1.birth.value;
+        var gender = document.form1.sex.value;
+        var ho1=document.form1.hobby1.value;
+        var ho2=document.form1.hobby2.value;
+        var ho3=document.form1.hobby3.value;
+        var selfs=document.form1.self.value;
+
+        // output.innerHTML = "姓名: "+ username+"<br>生日: "+ birthday+"<br>性別:"+gender+ "<br>興趣:"+ ho1+ho2+ho3+"<br>about me:"+ selfs;
+        // $(".ta").css("display:block");
+        d1.innerHTML=username;
+        d2.innerHTML=birthday
+        d3.innerHTML=gender;
+        d4.innerHTML=ho1+ho2+ho3;
+        d5.innerHTML=selfs;
+      }
+  </script>
+
+
+
+</head>
+<body>
+  <form name="form1">
+     姓名<br>
+    <input type="text"  name="myname" placeholder="請輸入姓名"><br>
+    生日<br>
+    <input type="date"  name="birth" placeholder="年年/月月/日日"><br>
+    性別<br>
+ <input type="radio" name="sex" value="男生"/>男生♂ <input type="radio" name="sex" value="女生"/>女生♀<br>
+    興趣<br>
+    <input type="text" name="hobby1" placeholder="興趣一"/>
+    <input type="text" name="hobby2" placeholder="興趣二"/> 
+    <input type="text" name="hobby3" placeholder="興趣三"/><br>
+    自傳<br>
+<textarea rows=10  cols=50 name="self" placeholder="至少100字"></textarea><br>
+<input class="send" type="button" value="送出" onclick="postData()" />
+  </form>
+  <p id="output"></p>
+  <div class="ta">
+  <table>
+    <caption>基本資料</caption>
+   <tbody>
+     <tr>
+       <td>姓名</td>
+       <td id="d1">內容部份1</td>
+      </tr>
+     <tr>
+       <td>生日</td>
+       <td id="d2">內容部份2</td>
+     </tr>
+     <tr>
+       <td>性別</td>
+       <td id="d3">內容部份3</td>
+     </tr>
+     <tr>
+       <td>興趣</td>
+       <td id="d4">內容部份4</td>
+     </tr>
+     <tr>
+       <td>自傳</td>
+       <td id="d5">內容部份5</td>
+     </tr>
+   </tbody>
+ </table>
+    </div>
+</body>
+</html>
