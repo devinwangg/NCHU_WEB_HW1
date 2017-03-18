@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <form name="form1">
+    名字：<input type="text"  name="username" value="">
+	
+	生日：<input type="text"  name="birthday" value=""><br></br>
+	性別：<input name="sex" type="radio" value="男">男
+	     <input name="sex" type="radio" value="女" >女<p>
+	嗜好（可複選）：<p>
+	
+		<input id="h" name="hobby" type="checkbox" value="book">閱讀
+		<input id="h" name="hobby" type="checkbox" value="sport" >運動
+		<input id="h" name="hobby" type="checkbox" value="music" >音樂
+		<input id="h" name="hobby" type="checkbox" value="sleep">睡覺
+		<input id="h" name="hobby" type="checkbox" value="talk">聊天
+	
+		<p>自傳:</p>
+<textarea id="me" ng-model="message" cols="40" rows="10"></textarea>
+	
+<br></br>
+ <input type="button" value="送出" onclick="postData()" />
+	<input type="submit" value="送出表單">
+	<input type="reset" value="重新輸入">
+<button onclick="myFunction()">送出表單2</button>
+
+    <input type="button" value="送出" onclick="postData()" />
+  </form>
+  <p id="output"></p>
+  <script>
+      function postData(){
+        var output = document.getElementById("output");
+        var username = document.form1.username.value;
+		var birthday = document.form1.birthday.value;
+		var sex = document.form1.sex.value;
+		var me = document.form1.me.value;
+		//var hobby = document.getElementById('h').checked;
+		
+		
+		var checkedValue = null; 
+
+		var inputElements = document.getElementsByName("hobby");
+		for(var i=0; inputElements[i]; ++i){
+			if(inputElements[i].checked){
+			checkedValue = inputElements[i].value;
+			break;
+			}
+		}
+		//var hobby = document.form1.hobby.length, document.form1.hobby[i].checked, document.form1.hobby[i].value;*/
+         output.innerHTML = " 姓名: " + username + " 性別: "+ sex +"  生日: " +birthday + "興趣:"+ checkedValue + "自傳:"+ me;
+		
+		
+      }
+
+  </script>
+</body>
+</html>
