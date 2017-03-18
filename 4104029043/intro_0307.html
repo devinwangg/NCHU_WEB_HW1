@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- 未處理RWD -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/materialize.css">
+  <script src="js/jquery-3.2.0.min.js"></script>
+
+  <title>自傳</title>
+  <script>
+  $(document).ready(function(){
+    $( ".button" ).click(function(){
+      var select = $( this ).val();
+      $( ".card_select" ).slideUp();
+      $("#"+select).slideDown();
+    });
+  });
+  </script>
+
+</head>
+
+<body>
+
+  <div class="row">
+    <div class="col l4"></div>
+    <div class="col l4 m6 s12">
+      <div id="wel-box"><span style="font-size:20px; font-style:italic;">Welcome</span></div>
+    </div>
+    <div class="col l4 m6"></div>
+  </div>
+
+  <div class="row">
+    <div class="col l5"></div>
+    <div class="col l7">
+      <input type="button" class="button" value="intro_card">
+      <input type="button" class="button" value="iframe">
+      <input type="button" class="button" value="form">
+    </div>
+  </div>
+
+  <div class="row card_select" id="intro_card">
+    <div class="col l4"></div>
+    <div class="col s12 m7 l4">
+      <div class="card" >
+        <div class="card-image">
+          <img src="img/profile.jpg">
+          <!-- <span class="card-title" style="color:black"></span> -->
+        </div>
+        <div class="card-content">
+          <ul class="collection">
+            <li class="collection-item"><span style="font-size:18px;">姓名 ： 許達夫</span></li>
+            <li class="collection-item"><span style="font-size:18px;">就讀系所 ： 資訊管理學系</span></li>
+            <li class="collection-item"><span style="font-size:18px;">職業 ： 碼農</span></li>
+            <li class="collection-item"><span style="font-size:18px;">專長 ： 養蟲</span></li>
+          </ul>
+        </div>
+        <div class="card-action">
+          <a href="https://github.com/cabao" target="_blank" title="Github"><img src="img/GitHub-Mark-32px.png"></a>
+          <a href="https://www.facebook.com/cabao1428" target="_blank" title="Facebook"><img src="img/fb_icon.png"></a>
+          <a href="https://twitter.com/Cabao_twit?lang=zh-tw" target="_blank" title="Twitter"><img src="img/twitter_icon.png"></a>
+          <a href="https://www.instagram.com/cacacamel0414/" target="_blank"title="Instagram"><img src="img/instagram_icon.png"></a>
+          <a href="mailto:cabao@cabao.com.tw" target="_blank" title="Mail" class="hide-on-small-only"><img src="img/mail_icon.png"></a>
+          <a href="https://cabao.github.io" target="_blank" title="Github Pages" class="hide-on-small-only"><img src="img/website_icon.png"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row card_select" id="iframe" style="display:none">
+    <table>
+      <tr>
+        <th>Alan Walker</th>
+        <th>Marshmello</th>
+      </tr>
+
+      <tr>
+        <td><a href="javascript:videochange('1-xGerv5FOk')">Alone</a></td>
+        <td><a href="javascript:videochange('ALZHF5UqnU4')">Alone</a></td>
+      </tr>
+
+      <tr>
+        <td><a href="javascript:videochange('JB7oZ4JQNrk')">Memories</a></td>
+        <td><a href="javascript:videochange('mKzLoZFz8PE')">Keep it Mello</a></td>
+      </tr>
+
+    </table>
+
+    <div id="player">
+      <iframe width="500" height="400" src="https://www.youtube.com/embed/1-xGerv5FOk" frameborder="0" allowfullscreen autoplay></iframe>
+    </div>
+  </div>
+
+
+  <div class="row card_select" id="form" style="display:none">
+    <img src="img/quiz_c.jpg" id="quiz">
+    <form>
+      <p>
+        <input name="group1" type="radio" id="r1" value="1"/>
+        <label for="r1"><span style="color:#000000">6次</span></label>
+      </p>
+      <p>
+        <input name="group1" type="radio" id="r2" value="2"/>
+        <label for="r2"><span style="color:#000000">2次</span></label>
+      </p>
+      <p>
+        <input name="group1" type="radio" id="r3" value="3"/>
+        <label for="r3"><span style="color:#000000">10次</span></label>
+      </p>
+      <p>
+        <input name="group1" type="radio" id="r4" value="4"/>
+        <label for="r4"><span style="color:#000000">小強是誰？</span></label>
+      </p>
+      <button type="button" name="button" onclick="javascript:check()">提交</button>
+    </form>
+
+    <script>
+      function check()
+      {
+        var x = $('input:radio:checked[name="group1"]').val();
+          if (x === "4")
+            alert("Bingo !");
+          else
+            alert("Wrong Password ! Try again ! ");
+      }
+    </script>
+  </div>
+
+</body>
+</html>
