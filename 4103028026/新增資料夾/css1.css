@@ -1,0 +1,19 @@
+	h1 {
+		font-size : 48px;
+		color : blue;
+	}
+	
+	img {
+		padding:20px;
+/*		padding-left:0px;	*/
+		border:20px;
+		border-style:solid;
+		border-color:white;
+	}
+	
+	span{
+		color:red;
+		font-style:italic;
+		font-weight:bolder;
+	}
+	
